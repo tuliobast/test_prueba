@@ -46,7 +46,7 @@ class ShopPage(BaseCase):
     def wait_for_current_subtotal(self):
         self.wait_for_element_visible(self.subtotal_text)
         self.wait_for_element_not_visible(self.subtotal_text)
-        self.wait(12)
+        self.wait(15)
 
     #Verify change subtotal
     def update_subtotal(self):
