@@ -15,8 +15,7 @@ class CartPage(BaseCase):
         self.add_js_code(self.remove_hiden_class)
         self.choose_file(self.up_file, self.file_path)
         self.click(self.upload_file)
-        #time.sleep(5)
-
+    
     def verify_upload(self):
         self.wait_for_element_visible(self.submit_message, timeout=15)
         self.assert_text('uploaded successfully', self.submit_message)
